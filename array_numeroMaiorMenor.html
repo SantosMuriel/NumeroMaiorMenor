@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<script>
+
+var array = [10, 3, 2, 4, 20, 11];
+var maior = 0;
+var menor = array[0];
+document.write("Números presentes na Array: " + array + "<br>" + "<hr>");
+
+for(var i = 0; i < array.length; i++){
+	if(array[i] > maior){
+		maior = array[i];
+	}	
+}
+document.write("Maior número: " + maior + "<br>" + "<hr>");
+
+for(var x = 0; x < array.length; x++){
+	if(array[x] < menor){
+		menor = array[x];
+	}	
+}
+document.write("Menor número: " + menor + "<br>" + "<hr>");
+
+</script>
+
+<!--
+O comando "for()" (laço de repetição) faz um loop por todo o vetor/array.
+A variável "MAIOR" recebe zero; caso o valor da primeira posição do array/vetor for maior que zero, a variavel "MAIOR" recebe o valor desse vetor, em seguida a posição da array é alterada devido ao incrfemento do laço "for()".
+Ao percorrer todo o array/vetor, o método "write()" exibe o valor maior.
+-->
